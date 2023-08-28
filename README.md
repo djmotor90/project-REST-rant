@@ -28,7 +28,7 @@ REST-Rant is a community-driven app where foodies can review restaurants. Discov
 1. **Clone this repository:**
 
     ```bash
-    git clone https://github.com/your-username/REST-Rant.git
+    git clone https://github.com/djmotor90/project-REST-rant
     ```
 
 2. **Navigate to the project folder:**
