@@ -88,3 +88,10 @@ Feel free to reach out if you have any questions or suggestions!
 | POST    | `/places/:id/rant`        | Create a rant (comment) about a particular place |
 | DELETE  | `/places/:id/rant/:rantId`| Delete a rant (comment) about a particular place |
 | GET     | `*`                       | 404 page (matches any route not defined above)  |
+
+
+## Data Colected
+
+| Name    | City    | State   | Cuisines   | Pic     |
+| --------| --------| --------| -----------| --------|
+| String  | String  | String  | String     | String  |
