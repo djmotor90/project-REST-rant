@@ -69,7 +69,7 @@ This project is licensed under the terms of the MIT license. For more informatio
 
 ## Contact 📧
 
-- **Project Owner**: [Your Name](https://github.com/your-username)
+- **Project Owner**: [Kim Gurinov](https://github.com/djmotor90)
 
 Feel free to reach out if you have any questions or suggestions!
 
