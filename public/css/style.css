@@ -2,4 +2,18 @@ h1 {
     text-align: center;
     color: cornflowerblue;
   }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
   
+  .sticky-footer {
+    margin-top: auto;
+    background-color: #dad71b; /* Change background color as needed */
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e7e7e7; /* Optional: Add border-top for visual separation */
+  }
+ 

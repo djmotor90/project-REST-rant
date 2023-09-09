@@ -11,6 +11,13 @@ function Def (html) {
             <body>
                 {html.children}
             </body>
+            <footer className="sticky-footer">
+    <a href="https://kimgurinov.com/resume/" style={{ margin: '0 15px', textDecoration: 'none', color: '#000' }}>Resume</a>
+    <a href="https://kimgurinov.com/" style={{ margin: '0 15px', textDecoration: 'none', color: '#000' }}>Portfolio</a>
+    <a href="https://www.linkedin.com/in/kimkimkimg/" style={{ margin: '0 15px', textDecoration: 'none', color: '#000' }}>LinkedIn</a>
+</footer>
+
+
         </html>
     )
 }
