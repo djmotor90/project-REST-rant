@@ -28,6 +28,7 @@ router.get('/:id', (req, res) => {
 
 
 
+
 router.post('/', (req, res) => {
 
   if (!req.body.pic) {
