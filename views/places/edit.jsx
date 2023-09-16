@@ -29,6 +29,10 @@ function edit_form (data) {
       ))}
     </select>
   </div>
+  <div className="form-group col-sm-6">
+                    <label htmlFor="foundedYear">Founded Year</label>
+                    <input type="number" className="form-control" id="foundedYear" name="foundedYear" value={data?.place?.foundedYear || ''} required />
+                </div>
   <div className="form-group">
     <label htmlFor="cuisines">Cuisines</label>
     <input className="form-control" id="cuisines" name="cuisines" value={data.place.cuisines} required />

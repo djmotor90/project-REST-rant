@@ -1,6 +1,8 @@
 const React = require('react');
 const Def = require('../default');
 
+
+
 function show({ place }) {
     return (
         <Def>
@@ -15,6 +17,7 @@ function show({ place }) {
                         <p><strong>City:</strong> {place.city}</p>
                         <p><strong>State:</strong> {place.state}</p>
                         <p><strong>Available Cuisines:</strong> {place.cuisines}</p>
+                        <p><strong>Established:</strong> {place.foundedYear}</p>
                     </div>
                 </div>
 
@@ -31,10 +34,10 @@ function show({ place }) {
                         <p>No comments yet!</p>
                     </div>
                     {/* Question is in need to use data.id or place.id */}
-                    <a href={`/places/${place.id}/edit`} className="btn btn-warning"> Edit</a>        
+                    <a href={`/places/${place.id}/edit`} className="btn btn-warning"> <i className="bi bi-pencil-fill"></i>Edit</a>        
 
                     <form method="POST" action={`/places/${place.id}?_method=DELETE`}> 
-                    <button type="submit" className="btn btn-danger">Delete</button>
+                    <button type="submit" className="btn btn-danger"><i className="bi bi-trash-fill"></i> Delete</button>
                   </form> 
 
 
