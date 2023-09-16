@@ -11,6 +11,7 @@ router.get('/new', (req, res) => {
   res.render('places/new')
 })
 
+
 router.get('/:id', (req, res) => {
   let id = Number(req.params.id)
   if (isNaN(id)) {
@@ -20,8 +21,12 @@ router.get('/:id', (req, res) => {
     res.render('error404')
   }
   else {
-    res.render('places/show', { place: places[id] })
+    let place = {...places[id], id}; // Add the id property to the place object
+    res.render('places/show', { place });
 
+
+    // This is per instruction but i was getting underfined
+    // res.render('places/show', { place: places[id], id })
   }
 })
 
