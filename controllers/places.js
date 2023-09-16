@@ -50,6 +50,40 @@ router.post('/', (req, res) => {
   res.redirect('/places')
 })
 
+// Router Edit
+router.get('/:id/edit', (req, res) => {
+  let id = Number(req.params.id)
+  if (isNaN(id)) {
+      res.render('error404')
+  }
+  else if (!places[id]) {
+      res.render('error404')
+  }
+  else {
+    let place = {...places[id], id}; // Add the id property to the place object
+    res.render('places/edit', { place });
+  }
+})
+
+// Router PUT
+router.put('/:id', (req, res) => {
+  let id = Number(req.params.id);
+  if (isNaN(id)) {
+      res.render('error404');
+  }
+  else if (!places[id]) {
+      res.render('error404');
+  }
+  else {
+    // update the place with the new data
+    places[id] = req.body;
+
+    // redirect to the individual place page
+    res.redirect(`/places/${id}`);
+  }
+});
+
+
 // Router Delete
 router.delete('/:id', (req, res) => {
   let id = Number(req.params.id)

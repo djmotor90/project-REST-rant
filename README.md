@@ -95,3 +95,6 @@ Feel free to reach out if you have any questions or suggestions!
 | Name    | City    | State   | Cuisines   | Pic     |
 | --------| --------| --------| -----------| --------|
 | String  | String  | String  | String     | String  |
+
+Notes for me
+enctype="application/x-www-form-urlencoded"
