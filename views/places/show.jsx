@@ -17,7 +17,7 @@ function show({ place }) {
                         <p><strong>City:</strong> {place.city}</p>
                         <p><strong>State:</strong> {place.state}</p>
                         <p><strong>Available Cuisines:</strong> {place.cuisines}</p>
-                        <p><strong>Established:</strong> {place.foundedYear}</p>
+                        <p><strong>Established:</strong> {place.founded}</p>
                     </div>
                 </div>
 
