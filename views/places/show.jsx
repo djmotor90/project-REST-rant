@@ -10,23 +10,24 @@ function show({ place }) {
                 <div className="row">
                     <div className="col-md-6">
                         <img src={place.pic} alt={place.name} className="img-fluid"/>
+                        <h3>Located in {place.city}, {place.state}</h3>
                     </div>
                     
                     <div className="col-md-6">
                         <h1>{place.name}</h1>
-                        <p><strong>City:</strong> {place.city}</p>
-                        <p><strong>State:</strong> {place.state}</p>
-                        <p><strong>Available Cuisines:</strong> {place.cuisines}</p>
-                        <p><strong>Established:</strong> {place.founded}</p>
-                    </div>
-                </div>
-
-                <div className="row mt-4">
+                        <div className="row mt-4">
                     <div className="col-12">
                         <h2>Rating</h2>
                         <p>Currently unrated</p>
                     </div>
                 </div>
+                <h2>Description</h2>
+                        <h3>{place.showEstablished()}</h3>
+                        <h4>Serving {place.cuisines}</h4>
+                    </div>
+                </div>
+
+                
 
                 <div className="row mt-4">
                     <div className="col-12">
