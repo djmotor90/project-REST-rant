@@ -1,10 +1,13 @@
 {
+  "homepage": "http://djmotor90.github.io/project-REST-rant",
   "name": "rest-rant",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "pm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -20,5 +23,8 @@
   },
   "nodemonConfig": {
     "ext": "js,html,json,jsx,mjs"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }
